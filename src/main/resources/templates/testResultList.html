@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Result Details</title>
+</head>
+<body>
+    <h1>Test Result Details</h1>
+    
+   
+    
+    <div>
+        <h2>Test Data</h2>
+        <ul>
+            <li th:each="data : ${testResult}">
+          <p><strong>Result ID:</strong> <span th:text="${data.resultId}"></span></p>
+        <p><strong>Date and Time:</strong> <span th:text="${data.dateTime}"></span></p>
+                <p><strong>Question:</strong> <span th:text="${data.question}"></span></p>
+                <p><strong>Selected Option:</strong> <span th:text="${data.selectedOption}"></span></p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

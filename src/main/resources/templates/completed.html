@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Completed</title>
+</head>
+<body>
+    <h1>Quiz Completed</h1>
+    
+    <!-- Button to show test results for a specific user -->
+    <form action="/findTestResultsById" method="get">
+        <label for="userId">Enter User ID:</label>
+        <input type="text" id="userId" name="userId" required>
+        <button type="submit">Find Test Results</button>
+    </form>
+
+    <!-- Button to view all test results -->
+    <form action="/viewAllTestResults" method="get">
+        <button type="submit">View All Test Results</button>
+    </form>
+</body>
+</html>

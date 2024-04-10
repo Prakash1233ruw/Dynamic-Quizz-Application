@@ -1,0 +1,17 @@
+server:
+  port: 8880
+#  servlet:
+#    context-path: /QuizzApplication
+spring:
+  datasource:
+    password: naruto
+    url: jdbc:mysql://localhost:3306/prakash_db
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+ 

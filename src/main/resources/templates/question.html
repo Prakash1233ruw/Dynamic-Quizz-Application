@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Question</title>
+</head>
+<body>
+    <h1>Quiz Question</h1>
+    <form action="/answer" method="post">
+        <p th:text="${question.question}"></p>
+        <input type="hidden" name="questionId" th:value="${question.id}" />
+        <button type="submit" name="selectedOption" value="1" th:text="${question.option1}"></button>
+        <button type="submit" name="selectedOption" value="2" th:text="${question.option2}"></button>
+        <button type="submit" name="selectedOption" value="3" th:text="${question.option3}"></button>
+        <button type="submit" name="selectedOption" value="4" th:text="${question.option4}"></button>
+    </form>
+</body>
+</html>
+
